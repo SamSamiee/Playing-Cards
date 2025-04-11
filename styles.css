@@ -1,0 +1,85 @@
+
+html{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  background-image: linear-gradient(45deg, rgb(177, 141, 103), rgb(102, 153, 171), rgb(113, 173, 113));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#playing-cards{
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 70px;
+  margin: auto;
+}
+
+.card {
+    background-color:rgb(247, 247, 247);
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.178);
+}
+
+p{
+  font-size: 60px;
+  margin: 4px;
+}
+
+.left {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.left p {
+  text-align: center;
+  line-height: 25px;
+  font-size: 30px;
+}
+
+.middle {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-self: center;
+}
+
+.middle br,p {
+  text-align: center;
+}
+
+.right {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+
+.right p {
+  text-align: center;
+  line-height: 25px;
+  font-size: 30px;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.red{
+  color: red;
+}
